@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background: linear-gradient(rgb(43, 19, 65),black);
+        min-height: 100vh;
+        /* overflow: hidden; */
+    }
+    header{
+        position: absolute;
+        top: 0;
+        bottom: 0   ;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1000;
+        /* align-items: center; */
+    }
+    header h1{
+        color: #ffffff;font-weight: bolder;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+    header ul{
+        display: flex;
+        justify-content: center;
+        
+    }
+    header ul li{
+        list-style: none;
+        margin-left: 20px;
+    }
+    header ul li a{
+        text-decoration: none;
+        padding: 6px 15px;
+        color: #ffffff;
+    }
+    header ul li a:hover,
+    header ul li a.active
+    {
+        background-color: #ffffff;
+        color: #351f38;
+        border-radius: 60%;
+    }
+    section{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* padding: 100px; */
+        overflow: hidden;
+    }
+    section::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(to top  , rgb(23, 1, 43),transparent);
+        z-index: 1000;
+    }
+    section img{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    section h1{
+
+        font-size: 2.5rem;
+        margin-bottom: 300px;
+        margin-left: 80px;
+        font-family:cursive , sans-serif;
+    }
+    .moon{
+        mix-blend-mode: screen;
+    }
+    .front{
+        z-index: 10;
+    }
+    #TEXT{
+        position: absolute;
+        color: #ffffff;
+        white-space: nowrap;
+        font-size: 1.5vw;
+        font: 1.5em;
+        z-index: 9;
+    }
+    .sec{
+        position: relative;
+       padding: 100px; 
+        
+    }
+    .sec h1{
+        font-size: 3.5em;
+        margin-bottom: 20px;
+        color: #ffffff;
+    }
+    .sec p{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:larger;
+        margin-bottom: 20px;
+    }
+    .footer {
+        
+            background-color: #ffffff00;
+            color: #fff;
+           
+            text-align: center;
+           margin-top: 200px;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer h1,h2 {
+            color: #fff;
+            margin-bottom: 20px;
+            text-decoration: none;
+        }
+        .footer p {
+            color: #fff;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+        .htmls{
+            height: 100px;
+            width: 300px;
+            margin-left: 1300px;
+            
+        }
+        @keyframes mySpinner {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(60deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-60deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+        .node {
+    height: 100px;
+    width: 150px;
+    margin-left: 1370px;
+    animation: mySpinner;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; 
+}
+
+
+
+
+</style>
+<body>
+    
+
+    <header>
+        
+        <h1>Arun</h1>
+        <ul>
+        <li><a class="active" href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="https://github.com/Rarunvenkatesh?tab=repositories">git hub</a></li>
+        <li><a href="https://www.linkedin.com/in/arun-venkatesh12121212/">Linkedin</a></li>
+    </ul>
+    </header>
+
+    <section>
+        <img class="stars" id="stars" src="stars.png" alt="">
+        <img id="moon" class="moon" src="moon.png" alt="">
+        <img id="behind" class="behind" src="mountains_behind.png" alt="">
+        <h1 id="tagLine" style="color: beige;" class="tagLine" id="TEXT">Hi There This is Arun Venkatesh R</h1>
+        <!-- <p>Designer Backend Developer</p> -->
+        <img id="front" class="front" src="mountains_front.png" alt="">
+    </section>
+
+    <div class="sec">
+        
+            <h1 style="color: #ffffff;">LET ME INTRODUCE MYSELF</h1>
+            <p style="color: #ffffff;">I fell in love with computers when i saw video of a persod building a computer</p>
+            <p style="color: #ffffff;">I am fluent in classics like <span style="color:blueviolet ;">Html,Css,Java and Javascript.</span></p>
+            <p style="color:#ffffff;">My field of Interest's are building new <span style="color: blueviolet;">Web Technologies and Products</span>  </p>
+            <p style="color: #ffffff;">Whenever possible, I also apply my passion for developing products with <i style="color: blueviolet;">Node.js</i> and <span style="color: blueviolet;">Modern Javascript Library and Frameworks  like React.js and Next.js</span> </p>
+        <img class="htmls" src="mountains_besasashind.png" alt="">
+        <img class="node" src="pngwing.com (1).png" alt="">
+    </div>
+     <div class="footer">
+        <h1>Contact me:</h1>
+        <h2>Email: arunvenktesh70@gmail.com</h2>
+        <p>Phone: 6379290616</p>
+        <p>place: chennai</p>
+        <p>My <a href="#">Linkedin</a> | <a href="#">github</a> </p>
+        <p>Designed by Arun</p>
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let behind = document.getElementById('behind');
+        let front = document.getElementById('front');
+        let tag = document.getElementById('tagLine');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            console.log(value);
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.25 + 'px';
+            tag.style.paddingLeft = value * 4 + 'px';
+            front.style.left = value * 0 + 'px';
+            behind.style.right = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
